@@ -1,4 +1,4 @@
-var friendsArray = require("../data/friends.js");
+var friendsArray = require("../data/friends");
 
 module.exports = function(app) {
 
@@ -6,7 +6,7 @@ module.exports = function(app) {
         res.json(friendsArray);
     } );
 
-app.post("/api/friends", function (req, res) {
+  app.post("/api/friends", function (req, res) {
     // console.log(req.body.match);
 
     // Display user details (name, photo, match)
